@@ -2,6 +2,7 @@ import React from 'react'
 import '../index.css'
 import '../Styles/Hero.css'
 
+
 export default function HeroSection() {
   return (
     <div  className ="hero">
@@ -15,8 +16,7 @@ export default function HeroSection() {
 
             </div>
         </div>
-                
-            
+        
     </div>
   )
 }

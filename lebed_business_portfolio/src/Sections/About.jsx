@@ -1,4 +1,25 @@
 import '../index.css'
+import about_image from '../images'
 export default function AboutSection() {
-    return <p className="text-lg font-bold text-blue-800">About us</p>;
+
+    return (
+      <div className='about'>
+        <img src={about_image} alt = "image 1" class = "w-[200px] h-[340px] p-[10px]"/>
+        <div className ='text-container'>
+      <h1>About us</h1>;
+      <p>
+      We specialize in a range of services from skilled rehabilitation 
+      services  to companionship and daily living assistance all designs to 
+      enhance the quality of life for our clients.
+      </p>
+      </div>
+    </div>
+    )
+   
+    
+   
+  
   }
+
+
+  
