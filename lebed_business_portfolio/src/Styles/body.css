@@ -18,7 +18,7 @@ body{
 .about h1{
     font-weight: 500; 
     font-size:30px;  
-    color: red;
+    color: rgb(202, 80, 80);
     text-decoration:underline;
 }
 .about img{
@@ -28,4 +28,56 @@ body{
     width:500px;
     display:flex;
     flex-direction:column;
+}
+
+.mission_vision{
+    padding:20px;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: aliceblue;
+}
+
+.mission_vision p{
+    font-family: 'Jacques+Francois+Shadow&family=Noto+Sans';
+    font-size:20px;
+}
+.mission_vision h1 {
+    font-weight: 200; 
+    font-size:30px; 
+    color:rgb(202, 80, 80);
+    text-decoration:underline;
+}
+.objectives ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    color:rgb(202, 80, 80);
+}
+.objectives li{
+    cursor: pointer;
+    padding:10px;
+    /* border-bottom: 2px solid #695b5b; */
+    border-right: #695b5b;
+}
+.objectives p {
+    font-size:30px;
+    border-right: 2px solid #695b5b;
+}
+.objectives  p span {
+    font-size: 60px;
+    display:flex ;
+
+}
+
+.founderSection-container{
+    width:400px;
+    
+
+}
+.Founder_description{
+    font-size: 20px;
+    color:aliceblue;
 }

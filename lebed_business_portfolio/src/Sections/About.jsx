@@ -1,5 +1,5 @@
 import '../index.css'
-import about_image from '../images'
+import about_image from '../images/image2 (2).jpeg'
 export default function AboutSection() {
 
     return (
