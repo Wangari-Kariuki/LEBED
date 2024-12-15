@@ -8,6 +8,7 @@ import './Styles/body.css';
 import TopNavigationbar from './Sections/TopNavigationbar';
 import Mission_vision from './Sections/Mission-vision';
 import FounderSection from './Sections/Founder';
+import ContactSection from './Sections/Contact';
 
 export default function Webpage() {
   return (
@@ -26,8 +27,11 @@ export default function Webpage() {
       <Mission_vision/>
       </FadeinWhenVisible_slower>
       </div>
- <FounderSection/>
-      
+      <FadeinWhenVisible_slower>
+      <FounderSection/>
+      </FadeinWhenVisible_slower>
+ 
+ <ContactSection/>
     </div>
   );
 }

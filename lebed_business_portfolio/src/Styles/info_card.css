@@ -9,7 +9,7 @@
     
 }
 
-.next-btn, .back-btn {
+.next-btn,  .back-btn{
     position: absolute;
     cursor: pointer;
     top: 50%;

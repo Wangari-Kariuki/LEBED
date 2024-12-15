@@ -9,18 +9,16 @@ export default function TopNavigationbar() {
         })
     }, []);
   return (
-    <div class ="h-[200px]">
-        {/* shadow-md flex justify-space-between w-26 */}
-        <nav className = {`container ${sticky? 'bg-#212EA0': 'bg-transpaent' } shadow-md flex'`}>
-        <ul>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px]">About us</li>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px]">Services</li>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px]">Info pack</li>
-            <li class = "inline-block text-blue font-semibold text-shadow-md list-none p-[10px] bg-white rounded-lg float-right">contact us</li>
+    <div className='nav-container'>
+        <nav className = {`container ${sticky? 'bg-#212EA0': 'bg-transpaent' } shadow-md p-[50px]'`}>
+        <ul class='p-[10]'>
+            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">About us</li>
+            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">Services</li>
+            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">Info pack</li>
+            <li class = "inline-block text-blue font-semibold text-shadow-md list-none p-[10px] bg-white rounded-lg float-right cursor-pointer">contact us</li>
 
         </ul>
         </nav>
-
     </div>
   )
 }
