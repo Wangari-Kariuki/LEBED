@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from './Sections/Hero';
 import AboutSection from './Sections/About';
-import Info_card from './Sections/info_card';
+import Info_card from './Sections/Info_Cards/Main';
 import './index.css';
 import './Styles/body.css';
 import TopNavigationbar from './Sections/TopNavigationbar';
