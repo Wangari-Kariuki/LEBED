@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from './Sections/Hero';
 import AboutSection from './Sections/About';
-import Info_card from './Sections/Info_Cards/Main';
+import Info_card from './Sections/Info_Cards/Info_card';
 import './index.css';
 import './Styles/body.css';
 import TopNavigationbar from './Sections/TopNavigationbar';
@@ -16,7 +16,7 @@ export default function Webpage() {
       <TopNavigationbar/>
       <HeroSection />
       <div className="bg-[#E8D5B5] flex justify-center items-center">
-        <Info_card />
+        <Info_card/>
       </div>
       <FadeinWhenVisible>
         <AboutSection />

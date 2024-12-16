@@ -1,0 +1,49 @@
+.custom_carousel{
+    width: 80%; /* Adjust carousel width */
+    margin: 0 auto; /* Center the carousel */
+    position: relative; /* Necessary for custom positioning */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #07081D;
+}
+
+.Card{
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 50%;
+    background-color: #aca9bb;
+    color: #0d0d31;
+    padding: 17px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    text-align: center;
+    height: 200px;
+
+
+}
+.Card h2{
+    color:#300000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.carousel-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+.alice-carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .alice-carousel__dots-item {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  .alice-carousel__dots-item.__active {
+    background-color: #ff5100; /* Highlight active dot */
+  }

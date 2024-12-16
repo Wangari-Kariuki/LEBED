@@ -1,7 +1,9 @@
 body{
-    background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../images/image1.jpg');
+    background-image: linear-gradient(rgba(8, 0, 58, 0.9), rgba(8, 0, 58, 0.9)), url('../images/image1.jpg');
     background-position: center;
     background-size: cover;
+
+
 }
 .about{
     padding:20px;
