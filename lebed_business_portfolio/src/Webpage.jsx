@@ -15,14 +15,14 @@ export default function Webpage() {
     <div className='body'>
       <TopNavigationbar/>
       <HeroSection />
-      <div className="bg-[#E8D5B5] flex justify-center items-center">
+      <div className="bg-[#300000] flex justify-center items-center">
         <Info_card/>
       </div>
       <FadeinWhenVisible>
         <AboutSection />
       </FadeinWhenVisible>
 
-      <div class ="bg-black"> 
+      <div class ="bg-[#300000]"> 
       <FadeinWhenVisible_slower>
       <Mission_vision/>
       </FadeinWhenVisible_slower>
@@ -59,7 +59,7 @@ function FadeinWhenVisible_slower({ children }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false}}
-      transition={{ duration: 2.0}}
+      transition={{ duration: 1.0}}
       variants={{
         visible: { opacity: 1, scale: 1},
         hidden: { opacity: 0, scale: 0 },

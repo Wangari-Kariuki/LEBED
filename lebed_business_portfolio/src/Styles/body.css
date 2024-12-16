@@ -1,10 +1,16 @@
 body{
-    background-image: linear-gradient(rgba(8, 0, 58, 0.9), rgba(8, 0, 58, 0.9)), url('../images/image1.jpg');
+    background-image: linear-gradient(rgba(8, 0, 58, 0.9), rgba(8, 0, 58, 0.8)), url('../images/image1.jpg');
     background-position: center;
     background-size: cover;
 
 
 }
+.nav-container{
+    position: fixed;
+    padding: 10px;
+    background-color: #aca9bb;
+}
+
 .about{
     padding:20px;
     width:100%;
@@ -33,6 +39,7 @@ body{
 }
 
 .mission_vision{
+    background-color: #300000;
     padding:20px;
     width:100%;
     display: flex;

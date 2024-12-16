@@ -9,14 +9,14 @@ export default function TopNavigationbar() {
         })
     }, []);
   return (
-    <div className='nav-container'>
-        <nav className = {`container ${sticky? 'bg-#212EA0': 'bg-transpaent' } shadow-md p-[50px]'`}>
+    <div className='fixed -top-0 w-full bg-[#aca9bb] p-[10px]'>
+        <nav className = {`container ${sticky? 'bg-[#212EA0]': 'bg-transpaent' } shadow-md pl-[25%] '`}>
         <ul class='p-[10]'>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">About us</li>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">Services</li>
-            <li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer">Info pack</li>
-            <li class = "inline-block text-blue font-semibold text-shadow-md list-none p-[10px] bg-white rounded-lg float-right cursor-pointer">contact us</li>
-
+            <a><li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer hover:text-[#612d2b] transition duration-300 ">About us</li></a>
+            <a><li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer hover:text-[#612d2b] transition duration-300 ">Services</li></a>
+            <a><li class = "inline-block text-white font-semibold text-shadow-md list-none p-[10px] cursor-pointer hover:text-[#612d2b] transition duration-300 ">Info pack</li></a>
+            <a><li class = "inline-block text-blue font-semibold text-shadow-md list-none p-[10px] bg-white rounded-lg float-right cursor-pointer hover:bg-[#612d2b] hover:text-white transition duration-300 ">contact us</li>
+            </a>
         </ul>
         </nav>
     </div>
