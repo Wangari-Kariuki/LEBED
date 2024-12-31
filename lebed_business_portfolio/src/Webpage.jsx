@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from './Sections/Hero';
 import AboutSection from './Sections/About';
@@ -9,27 +9,48 @@ import TopNavigationbar from './Sections/TopNavigationbar';
 import Mission_vision from './Sections/Mission-vision';
 import FounderSection from './Sections/Founder';
 import ContactSection from './Sections/Contact';
-
+import Services from '../src/Sections/services'
+import Section_titles from './Sections/section_titles';
+//import Cursor_movement from './Components/cursor_movement';
 export default function Webpage() {
+
+
   return (
     <div className='body'>
       <TopNavigationbar/>
       <HeroSection />
-      <div className="bg-[#300000] flex justify-center items-center">
-        <Info_card/>
-      </div>
-      <FadeinWhenVisible>
-        <AboutSection />
-      </FadeinWhenVisible>
 
-      <div class ="bg-[#300000]"> 
-      <FadeinWhenVisible_slower>
-      <Mission_vision/>
-      </FadeinWhenVisible_slower>
-      </div>
-      <FadeinWhenVisible_slower>
-      <FounderSection/>
-      </FadeinWhenVisible_slower>
+      <Section_titles title={"About us"} />
+      <FadeinWhenVisible >
+            <AboutSection/>
+          </FadeinWhenVisible>
+    
+
+ <div className='bg-[#FAF0E6]'>
+    <Section_titles title={"Our values"} class="relative" />
+          <div className="bg-[#FAF0E6] flex justify-center items-center">
+
+          
+            <Info_card/>
+          </div>
+          
+           <div class="bg-[#FAF0E6] rounded-[7%]"> 
+
+    <Section_titles title={"Our mission and vision"} />
+          <FadeinWhenVisible_slower>
+          <Mission_vision/>
+          </FadeinWhenVisible_slower>
+          </div>
+
+    <Section_titles title={"Our services"} className="text-black" />
+         <Services/>
+
+<Section_titles title={"About the founder"} />
+        <FadeinWhenVisible_slower>
+        <FounderSection/>
+        </FadeinWhenVisible_slower>
+</div>
+
  
  <ContactSection/>
     </div>
@@ -69,3 +90,5 @@ function FadeinWhenVisible_slower({ children }) {
     </motion.div>
   );
 }
+
+

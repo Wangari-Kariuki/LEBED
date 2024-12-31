@@ -1,14 +1,17 @@
+import { useEffect } from 'react';
 import './App.css';
 import Webpage from './Webpage';
-import './index.css'
-function App() {
+import './index.css';
+//import { gapi } from 'gapi-script';
+
+
+const App = () => {
+  
   return (
     <div>
-      <Webpage/>
-      
-      
+      <Webpage />
     </div>
   );
-}
+};
 
 export default App;

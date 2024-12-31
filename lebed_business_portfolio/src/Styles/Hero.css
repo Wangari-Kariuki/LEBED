@@ -9,6 +9,8 @@
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
+    height: 400px;
+    border-bottom: 1px solid #695b5b ;
   }
   .hero img {
     width:500px;
@@ -23,7 +25,7 @@
     flex-wrap: wrap; /* Ensure it wraps on smaller screens */
   }
   
-  .title {
+  .title_hero {
     padding:0 20px;
     position: relative;
     display: flex;
@@ -32,7 +34,7 @@
     transition: transform 0.5s;
   }
   
-  .title::after {
+  .title_hero::after {
     content: '';
     position: absolute;
     top: 0;

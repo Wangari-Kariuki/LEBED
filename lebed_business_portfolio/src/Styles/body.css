@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Jacques+Francois+Shadow&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     background-image: linear-gradient(rgba(8, 0, 58, 0.9), rgba(8, 0, 58, 0.8)), url('../images/image1.jpg');
     background-position: center;
@@ -5,47 +7,59 @@ body{
 
 
 }
-.nav-container{
-    position: fixed;
-    padding: 10px;
-    background-color: #aca9bb;
-}
 
 .about{
+    height:200px;
     padding:20px;
     width:100%;
-    display: flex;
+    display:flex;
     align-items:center;
     justify-content:center;
 }
 .about p{
-    color:white;
+    width: 500px;
+    color: #FAF0E6;
     font-family: 'Jacques+Francois+Shadow&family=Noto+Sans';
-    font-size:25px;
+    font-size:20px;
+    font-weight: 300;
 }
 .about h1{
+    margin-left: 20%;
+    font-family: 'Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jacques+Francois+Shadow&family=Montserrat';
     font-weight: 500; 
     font-size:30px;  
     color: rgb(202, 80, 80);
     text-decoration:underline;
 }
-.about img{
-   border-radius: 10px;
-}
 .text-container {
-    width:500px;
+    width:100%;
     display:flex;
     flex-direction:column;
 }
+.mission-vision-container{
+    border-top: 1px solid #695b5b ;
+    display: flex;
+    flex-direction: row;
+}
+.objectives-col{
+    width: 47%;
+   padding-right: 0px;
+}
 
 .mission_vision{
-    background-color: #300000;
-    padding:20px;
-    width:100%;
+    /* background-color: #D1D5DB; */
+    padding-bottom: 20px;
+    width:70%;
     display: flex;
+    flex-direction: row;
     align-items:center;
     justify-content:center;
-    color: aliceblue;
+    color: rgb(41, 7, 41);
+}
+.mission_vision::before{
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 10%, transparent 60%);
+    opacity: 0.2;
+    z-index: 1;
 }
 
 .mission_vision p{
@@ -53,44 +67,47 @@ body{
     font-size:20px;
 }
 .mission_vision h1 {
+
+    font-family: 'Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jacques+Francois+Shadow&family=Montserrat';
     font-weight: 200; 
     font-size:30px; 
     color:rgb(202, 80, 80);
     text-decoration:underline;
 }
-.objectives ul{
+.objectives-col ul{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
-    align-items: center;
+    align-items:end;
     color:rgb(202, 80, 80);
 }
-.objectives li{
+.objectives-col li{
+    border: 1px solid #695b5b ;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     cursor: pointer;
     padding:10px;
     /* border-bottom: 2px solid #695b5b; */
-    border-right: #695b5b;
 }
-.objectives p {
+.objectives-col p {
     font-size:30px;
-    border-right: 2px solid #695b5b;
 }
 .objectives  p span {
     font-size: 60px;
-    display:flex ;
+
 
 }
 
 .founder-container{
     margin-top: 10px;
-    padding: 20px;
+    width:80%;
     height: 300px;
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
-    border-top:2px solid #695b5b;
+    color:  rgb(202, 80, 80);
     box-sizing: border-box;
     box-shadow: 5px 5px 10px 2px rgba(110, 61, 61, 0.3)
 }
@@ -101,18 +118,37 @@ body{
 
 }
 .founder-container img {
-    border-radius: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
 }
 .contact {
+
+
+    border-radius: 7%;
+    height:500px;
     padding-top:50px ;
-    background-image:linear-gradient(to right, black, rgb(46, 46, 161));
+    /* background-image:linear-gradient(to right, black, rgb(46, 46, 161)); */
     color:aliceblue;  
 }
 .contact-col{
+    background-color: rgb(238, 231, 231);
+    padding-right: 10%;
     display: flex;
-    justify-content: center;
+    float: right;
     align-items: center;
     flex-direction:column;
+    width:40%;
+    color: black;
+
+}
+.empty{
+    background: #000000;
+    width:80px;
+}
+.contact-col li {
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 10px;
 }
 .contact-col img {
     width: 30px;
@@ -121,4 +157,34 @@ body{
 .contact-col li {
     display: flex;
     flex-direction: row;
+}
+.contact-col-2{
+    width:55%;
+    padding-left: 10%;
+}
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.Button-submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 19, 19);
+    border: 1px solid #695b5b;
+    box-shadow: #695b5b;
+    color: azure;
+    width:50%;
+    border-radius: 2px;
+}
+.form .text-area{
+    margin-bottom: 10px;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import about_image from '../images/Untitled design (5).png'
+import about_image from '../images/WhatsApp Image 2024-12-21 at 21.40.25_7f355c87.jpg'
 export default function Mission_vision() {
   return (
-    <div>
+    <div className='mission-vision-container'>
 
 <div className='mission_vision'>
-        <img src={about_image} alt = "image 1" class = "w-[400px] h-[auto] p-[10px]"/>
+        <img src={about_image} alt = "image 1" class = "w-[400px] h-[auto] p-[10px] rounded-md"/>
         <div className ='text-container'>
       <h1 class = "px-[24px]  text-500-red">Our mission</h1>
       <p>
@@ -19,7 +19,7 @@ export default function Mission_vision() {
       </div>
       </div>
       
-      <div className='objectives'>
+      <div className='objectives-col'>
         <ul>
           <li>
           <p>at least <span>   125+</span></p>
