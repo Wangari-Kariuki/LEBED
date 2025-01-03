@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from './Sections/Hero';
 import AboutSection from './Sections/About';
-import Info_card from './Sections/Info_Cards/Info_card';
+import InfoCard from './Sections/Info_Cards/Info_card';
 import './index.css';
 import './Styles/body.css';
 import TopNavigationbar from './Sections/TopNavigationbar';
-import Mission_vision from './Sections/Mission-vision';
+import MissionVision from './Sections/Mission-vision';
 import FounderSection from './Sections/Founder';
 import ContactSection from './Sections/Contact';
 import Services from '../src/Sections/services'
-import Section_titles from './Sections/section_titles';
+import SectionTitles from './Sections/section_titles';
 //import Cursor_movement from './Components/cursor_movement';
 export default function Webpage() {
 
@@ -20,35 +20,38 @@ export default function Webpage() {
       <TopNavigationbar/>
       <HeroSection />
 
-      <Section_titles title={"About us"} />
+      <SectionTitles title={"About us"} />
       <FadeinWhenVisible >
             <AboutSection/>
           </FadeinWhenVisible>
     
 
  <div className='bg-[#FAF0E6]'>
-    <Section_titles title={"Our values"} class="relative" />
-          <div className="bg-[#FAF0E6] flex justify-center items-center">
+    <SectionTitles title={"Our values"} class="relative" />
+          <div className="bg-[#FAF0E6]">
 
           
-            <Info_card/>
+            <InfoCard/>
           </div>
           
            <div class="bg-[#FAF0E6] rounded-[7%]"> 
 
-    <Section_titles title={"Our mission and vision"} />
-          <FadeinWhenVisible_slower>
-          <Mission_vision/>
-          </FadeinWhenVisible_slower>
+    <SectionTitles title={"Our mission and vision"} />
+          <FadeinWhenVisibleSlower>
+          <MissionVision/>
+          </FadeinWhenVisibleSlower>
           </div>
 
-    <Section_titles title={"Our services"} className="text-black" />
+    <SectionTitles title={"Our services"} className="text-black" />
          <Services/>
 
-<Section_titles title={"About the founder"} />
-        <FadeinWhenVisible_slower>
+<SectionTitles title={"About the founder"} />
+<div className='founder-div'>
+<FadeinWhenVisibleSlower>
         <FounderSection/>
-        </FadeinWhenVisible_slower>
+        </FadeinWhenVisibleSlower>
+</div>
+
 </div>
 
  
@@ -74,7 +77,7 @@ function FadeinWhenVisible({ children }) {
   );
 }
 
-function FadeinWhenVisible_slower({ children }) {
+function FadeinWhenVisibleSlower({ children }) {
   return (
     <motion.div
       initial="hidden"

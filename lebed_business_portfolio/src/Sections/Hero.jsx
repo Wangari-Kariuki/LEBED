@@ -11,7 +11,7 @@ export default function HeroSection() {
       <img src= {logo} alt = ""/>
         <div className="title-slogan-container">
              <div className='title_hero'>
-                    <h1>LEBED</h1>
+                    <h1 classsName = "font-Roboto text-xl">LEBED</h1>
                     <h2>HEALTHWAYS</h2>
             </div>
             <div className='slogan'>

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Webpage from './Webpage';
 import './index.css';

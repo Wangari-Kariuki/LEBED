@@ -16,8 +16,8 @@ export default function ContactSection() {
       return;
     }
 
-    fetch(
-      "https://script.google.com/macros/s/AKfycbzhnFQ2FYX7WrzA68PQBGnTxqi-fQbWQSNd-zdNCCmh-0cmbX-WiyaiSd6zWG5KJJbP/exec",
+    fetch
+     (process.env.REACT_APP_GOOGLE_SCRIPT_URL,
       {
         method: "POST",
         body: formData,
@@ -35,16 +35,15 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="contact">
+    <div id = 'contact_us'className="contact">
      
       <div className="contact-col">
       <div className="empty">
         
       </div>
         <ul>
-          <li>www.lebedhealthways.com</li>
           <li>
-            <img src={email_icon} alt="email_icon" /> contacts@datashield.
+            <img src={email_icon} alt="email_icon" /> lebedhealthways@gmail.com
           </li>
           <li>
             <img src={phone_icon} alt="phone-icon" /> +254 113188250
@@ -82,7 +81,7 @@ export default function ContactSection() {
           ></textarea>
           <button type="submit" className="Button-submit">
             Send Message
-            <img src= {message_sent_icon} className="w-9 pl-[20px]"/>
+            <img src= {message_sent_icon} className="w-9 pl-[20px]" alt="message_sent icon"/>
           </button>
         </form>
       </div>

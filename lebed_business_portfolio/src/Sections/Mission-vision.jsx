@@ -1,11 +1,11 @@
 import React from 'react'
-import about_image from '../images/WhatsApp Image 2024-12-21 at 21.40.25_7f355c87.jpg'
-export default function Mission_vision() {
+import about_image from '../images/mission.jpg'
+export default function MissionVision() {
   return (
     <div className='mission-vision-container'>
 
-<div className='mission_vision'>
-        <img src={about_image} alt = "image 1" class = "w-[400px] h-[auto] p-[10px] rounded-md"/>
+<div id = 'mission' className='mission_vision'>
+        <img src={about_image} alt = "mission.jpg" class = "w-[400px] h-[auto] p-[10px] rounded-md"/>
         <div className ='text-container'>
       <h1 class = "px-[24px]  text-500-red">Our mission</h1>
       <p>

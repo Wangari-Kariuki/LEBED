@@ -1,7 +1,7 @@
 import React from 'react'
 import founder_profile from '../images/founder.jpg'
 import '../Styles/body.css'
-import Section_titles from './section_titles'
+
 export default function FounderSection() {
   return (
     <div class="">
@@ -9,11 +9,11 @@ export default function FounderSection() {
     <div className ='founder-container'>
       <img src = {founder_profile} alt="" class='w-[200px] h-[200px]  p-[5px] '/>
       <div className='text-container'>
-      <h1 class = "px-[24px]  text-500-red">Founder: Stella Kangori</h1>
-      <p>
-      the founder and CEO of Lebed Healthewasys. 
-      She is a dedicated and passionate 
-      Physiotherapist with years of experience in the field.
+      <p><span class = "px-[10px]">Stella Kanyori </span>
+      is the visionary founder and CEO of Lebed Healthways.She
+      is a highly skilled and passionate physiotherapist with extensive experience 
+      in promoting health and wellness. With a career spanning 4 years, she has dedicated herself to helping individuals recover, 
+      thrive, and achieve their physical potential.
       </p>
       </div>
      

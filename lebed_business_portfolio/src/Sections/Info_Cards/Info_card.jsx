@@ -6,7 +6,6 @@ function Cards_Carousel(){
     <style>
         
     </style>
-    const handleDragStart = (e) => e.preventDefault();
 
 
 const cards= [
@@ -39,7 +38,8 @@ const cards= [
     ];
 
   
-return (<AliceCarousel 
+return ( <div id = 'values'>
+    <AliceCarousel 
 items = {cards}
 autoPlay
 autoPlayInterval={3000}
@@ -48,6 +48,8 @@ disableButtonsControls
 mouseTracking
 className = "custom_carousel"
 />
+
+</div>
 );
 };
 

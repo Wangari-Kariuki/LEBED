@@ -3,6 +3,7 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   extend: {
     fontFamily: {
+        'Great-Vibes': ['"Great Vibes"', 'cursive'],
       edu: ['"Edu AU VIC WA NT Pre"', 'cursive'],
       greatVibes: ['"Great Vibes"', 'cursive'],
       jacques: ['"Jacques Francois Shadow"', 'serif'],
