@@ -199,34 +199,300 @@ justify-content: center;
     margin-bottom: 10px;
 }
 
-@media (max-width: 997px) {
-    .mission_vision{
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-    }
-    .mission_vision p {
-        font-size: 10px;
-    }
-    
-    .mission_vision h1 {
-        font-size: 15px;
-    }
-    .founder-container{
-        width: 80%;
-    }
-    .founder-container img {
-        width: 150px;
-        height: 150px;
-    }
-   .founder-container p {
-    font-size: 15px;
+
+
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        background-image: linear-gradient(rgba(9, 1, 59, 0.9), rgba(9, 1, 59, 0.9)), url('../images/image1.jpg');
+        background-position: top;
+        background-size: cover;
     }
 
-    .contact-col{
-        font-size: 10px;
+    .about p {
+        width: 90%;
+        font-size: 16px;
     }
-    .contact-col-2{
-        font-size: 10px; 
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 24px;
     }
-   }
+
+    .mission_vision {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .mission_vision h1, .mission_vision p {
+        font-size: 18px;
+    }
+
+    .objectives-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .objectives-col p {
+        font-size: 25px;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .founder-description {
+        font-size: 16px;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .contact-col {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-col-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form input, .form .text-area {
+        width: 100%;
+    }
+
+    .Button-submit {
+        width: 80%;
+    }
+}
+
+/* Small Tablets and Larger Mobiles (481px - 768px) */
+@media (max-width: 768px) {
+    .about p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 26px;
+    }
+
+    .mission_vision {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .mission_vision h1, .mission_vision p {
+        font-size: 15px;
+    }
+
+    .objectives-col {
+        width: 100%;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-col {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-col-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form input, .form .text-area {
+        width: 100%;
+    }
+
+    .Button-submit {
+        width: 70%;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) {
+    .about p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .mission_vision {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .mission_vision h1, .mission_vision p {
+        font-size: 24px;
+    }
+
+    .objectives-col {
+        width: 45%;
+    }
+
+    .founder-container {
+        width: 90%;
+        height: 350px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 45%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 55%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 80%;
+    }
+
+    .Button-submit {
+        width: 60%;
+    }
+}
+
+/* Large Tablets and Small Desktops (1025px - 1280px) */
+@media (max-width: 1280px) {
+    .about p {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    .mission_vision {
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .mission_vision h1, .mission_vision p {
+        font-size: 26px;
+    }
+
+    .objectives-col {
+        width: 45%;
+    }
+
+    .founder-container {
+        width: 80%;
+        height: 350px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 40%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 60%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 80%;
+    }
+
+    .Button-submit {
+        width: 50%;
+    }
+}
+
+/* Large Screens (1281px and above) */
+@media (min-width: 1281px) {
+    .about p {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .about h1 {
+        margin-left: 20%;
+        font-size: 30px;
+    }
+
+    .mission_vision {
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .mission_vision h1, .mission_vision p {
+        font-size: 28px;
+    }
+
+    .objectives-col {
+        width: 47%;
+    }
+
+    .founder-container {
+        width: 80%;
+        height: 300px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 40%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 55%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 60%;
+    }
+
+    .Button-submit {
+        width: 50%;
+    }
+}
