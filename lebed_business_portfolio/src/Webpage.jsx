@@ -34,7 +34,7 @@ export default function Webpage() {
             <InfoCard/>
           </div>
           
-           <div class="bg-[#FAF0E6] rounded-[7%]"> 
+           <div className ="bg-[#FAF0E6] rounded-[7%]"> 
 
     <SectionTitles title={"Our mission and vision"} />
           <FadeinWhenVisibleSlower>
