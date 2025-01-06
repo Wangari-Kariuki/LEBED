@@ -7,6 +7,10 @@ import message_sent_icon from "../images/message_sent_icon.png"
 export default function ContactSection() {
   const formRef = React.useRef(null);
 
+  const clearFormFields = () => {
+    formRef.current.reset();  
+  }
+
   const Submit = (e) => {
     e.preventDefault();
     const formData = new FormData(formRef.current);
@@ -23,10 +27,14 @@ export default function ContactSection() {
         body: formData,
       }
     )
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {  
+          throw new error ("Network response not ok")
+      } return response.json();})
       .then((data) => {
         console.log("Success:", data);
         alert("Message sent!");
+        clearFormFields();
       })
       .catch((error) => {
         console.error("Error:", error);
