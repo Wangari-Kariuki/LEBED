@@ -1,0 +1,68 @@
+/* General styles */
+.mission-vision-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mission_vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.mission_vision-text {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.objectives-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Media query for tablets and phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .mission-vision-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mission_vision {
+    flex-direction: column;
+  }
+
+  .mission_vision-text {
+    font-size: 14px;
+  }
+
+  .objectives-col ul {
+    flex-direction: column;
+  }
+
+  .mission_vision img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Media query for small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .mission_vision-text {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .objectives-col ul {
+    gap: 5px;
+  }
+
+  .mission_vision img {
+    width: 90%;
+  }
+}

@@ -13,6 +13,7 @@ export const theme = {
       roboto: ['Roboto', 'sans-serif'],
     },
     boxShadow: {
+      'lg': '5px 5px 10px 2px rgba(110, 61, 61, 0.3)',
       'custom-light': '0 2px 4px rgba(143, 37, 37, 0.1)',
       'custom-heavy': '0 10px 15px rgba(128, 44, 44, 0.5)',
     },

@@ -37,49 +37,60 @@ export default function ContactSection() {
   };
 
   return (
-    <div id="contact_us" className="contact">
-      <div className="contact-col">
-        <div className="empty"></div>
-        <ul>
-          <li>
-            <img src={email_icon} alt="email_icon" /> lebedhealthways@gmail.com
-          </li>
-          <li>
-            <img src={phone_icon} alt="phone-icon" /> +254 113188250
-          </li>
-          <li>
-            <img src={location_icon} alt="location_icon" /> 009300 Ongata Rongai,
-            Kajiado, Kenya
-          </li>
-        </ul>
-      </div>
-      <div className="contact-col-2">
-        <h3>Send us a message</h3>
-        <form ref={formRef} onSubmit={Submit} className="form">
-          <input
-            type="text"
-            name="Name"
-            placeholder="Name"
-            className="input-style"
-          />
-          <input
-            type="email"
-            name="Email"
-            placeholder="Email"
-            className="input-style"
-          />
-          <textarea
-            name="Message"
-            placeholder="Your Message"
-            rows="4"
-            className="text-area"
-          ></textarea>
-          <button type="submit" className="Button-submit">
-            Send Message
-            <img src={message_sent_icon} className="w-9 pl-[20px]" alt="message_sent icon" />
-          </button>
-        </form>
-      </div>
-    </div>
+<div
+  id="contact_us"
+  className="flex flex-col sm:flex-row items-center justify-center rounded-[7%] p-4 text-alice sm:h-auto"
+>
+  {/* Left Column */}
+  <div className="contact-col flex flex-col items-center w-full sm:w-[40%] bg-[#EEE7E7] text-black text-center sm:text-left p-4 sm:h-auto">
+    <ul>
+      <li className="mb-4 flex items-center">
+        <img src={email_icon} alt="email_icon" className="w-6 h-6 mr-2" />
+        <span>lebedhealthways@gmail.com</span>
+      </li>
+      <li className="mb-4 flex items-center">
+        <img src={phone_icon} alt="phone-icon" className="w-6 h-6 mr-2" />
+        <span>+254 113188250</span>
+      </li>
+      <li className="mb-4 flex items-center">
+        <img src={location_icon} alt="location_icon" className="w-6 h-6 mr-2" />
+        <span>009300 Ongata Rongai, Kajiado, Kenya</span>
+      </li>
+    </ul>
+  </div>
+
+  {/* Right Column */}
+  <div className="contact-col-2 w-full sm:w-[60%] p-4">
+    <h3 className="text-lg font-semibold text-center text-white sm:text-left mb-4">Send us a message</h3>
+    <form ref={formRef} onSubmit={Submit} className="form flex flex-col gap-4">
+      <input
+        type="text"
+        name="Name"
+        placeholder="Name"
+        className="input-style w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#CA5050]"
+      />
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email"
+        className="input-style w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#CA5050]"
+      />
+      <textarea
+        name="Message"
+        placeholder="Your Message"
+        rows="4"
+        className="text-area w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#CA5050]"
+      ></textarea>
+      <button
+        type="submit"
+        className="Button-submit w-full bg-[#CA5050] text-white py-2 px-4 rounded-md flex justify-center items-center gap-2 hover:bg-[#b64444] transition-all"
+      >
+        Send Message
+        <img src={message_sent_icon} className="w-6" alt="message_sent icon" />
+      </button>
+    </form>
+  </div>
+</div>
+
   );
 }

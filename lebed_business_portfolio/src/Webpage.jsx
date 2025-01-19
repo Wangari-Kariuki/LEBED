@@ -43,10 +43,13 @@ export default function Webpage() {
           </div>
 
     <SectionTitles title={"Our services"} className="text-black" />
-         <Services/>
+    <div className="mx-[20px]">
+    <Services/>
+    </div>
+      
 
 <SectionTitles title={"About the founder"} />
-<div className='founder-div'>
+<div className='container-div'>
 <FadeinWhenVisibleSlower>
         <FounderSection/>
         </FadeinWhenVisibleSlower>

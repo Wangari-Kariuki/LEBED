@@ -1,0 +1,253 @@
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        background-image: linear-gradient(rgba(9, 1, 59, 0.9), rgba(9, 1, 59, 0.9)), url('../images/image1.jpg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .about p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+   
+    .objectives-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .objectives-col p {
+        font-size: 25px;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .founder-description {
+        font-size: 16px;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .contact-col {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-col-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form input, .form .text-area {
+        width: 100%;
+    }
+
+    .Button-submit {
+        width: 80%;
+    }
+}
+
+/* Small Tablets and Larger Mobiles (481px - 768px) */
+@media (max-width: 768px) {
+    .about p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 26px;
+    }
+
+    .objectives-col {
+        width: 100%;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-col {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-col-2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form input, .form .text-area {
+        width: 100%;
+    }
+
+    .Button-submit {
+        width: 70%;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) {
+    .about p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+
+    .objectives-col {
+        width: 45%;
+    }
+
+    .founder-container {
+        width: 90%;
+        height: 350px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 45%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 55%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 80%;
+    }
+
+    .Button-submit {
+        width: 60%;
+    }
+}
+
+/* Large Tablets and Small Desktops (1025px - 1280px) */
+@media (max-width: 1280px) {
+    .about p {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .about h1 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+
+    .objectives-col {
+        width: 45%;
+    }
+
+    .founder-container {
+        width: 80%;
+        height: 350px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 40%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 60%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 80%;
+    }
+
+    .Button-submit {
+        width: 50%;
+    }
+}
+
+/* Large Screens (1281px and above) */
+@media (min-width: 1281px) {
+    .about p {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .about h1 {
+        margin-left: 20%;
+        font-size: 30px;
+    }
+
+
+    .objectives-col {
+        width: 47%;
+    }
+
+    .founder-container {
+        width: 80%;
+        height: 300px;
+        flex-direction: row;
+    }
+
+    .contact {
+        height: 500px;
+        padding-top: 50px;
+        flex-direction: row;
+    }
+
+    .contact-col {
+        width: 40%;
+        padding-right: 10%;
+    }
+
+    .contact-col-2 {
+        width: 55%;
+        padding-left: 10%;
+    }
+
+    .form input, .form .text-area {
+        width: 60%;
+    }
+
+    .Button-submit {
+        width: 50%;
+    }
+}
