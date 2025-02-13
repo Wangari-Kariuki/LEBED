@@ -5,7 +5,7 @@ import about_image from "../images/mission.jpg";
 
 export default function MissionVision() {
   return (
-    <div className="mission-vision-container flex flex-col items-center gap-6 px-4 py-8 sm:px-10 sm:py-12">
+    <div id = "mission" className="mission-vision-container flex flex-col items-center gap-6 px-4 py-8 sm:px-10 sm:py-12">
       {/* Mission Section */}
       <div className="mission_vision flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-12 w-full max-w-6xl">
         <img
@@ -25,11 +25,6 @@ export default function MissionVision() {
             partner in promoting health, happiness, and dignity.
           </p>
         </div>
-        <img
-          src={about_image}
-          alt="mission.jpg"
-          className="w-[80%] sm:w-[250px] h-auto p-2 rounded-[10%]"
-        />
       </div>
 
       {/* Objectives Section */}

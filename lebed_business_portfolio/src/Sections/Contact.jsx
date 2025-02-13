@@ -50,7 +50,7 @@ export default function ContactSection() {
       </li>
       <li className="mb-4 flex items-center">
         <img src={phone_icon} alt="phone-icon" className="w-6 h-6 mr-2" />
-        <span>+254 113188250</span>
+        <span>+254 723477313</span>
       </li>
       <li className="mb-4 flex items-center">
         <img src={location_icon} alt="location_icon" className="w-6 h-6 mr-2" />
@@ -82,12 +82,13 @@ export default function ContactSection() {
         className="text-area w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#CA5050]"
       ></textarea>
       <button
-        type="submit"
-        className="Button-submit w-full bg-[#CA5050] text-white py-2 px-4 rounded-md flex justify-center items-center gap-2 hover:bg-[#b64444] transition-all"
-      >
-        Send Message
-        <img src={message_sent_icon} className="w-6" alt="message_sent icon" />
-      </button>
+  type="submit"
+  className="Button-submit w-full sm:w-[50%] lg:w-[30%] px-4 py-2 bg-[#CA5050] text-white text-sm sm:text-base lg:text-lg rounded-md flex justify-center items-center hover:bg-[#b64444] transition-all mx-auto"
+>
+  Send Message
+  <img src={message_sent_icon} className="w-4 sm:w-5 lg:w-6 ml-2" alt="message_sent icon" />
+</button>
+
     </form>
   </div>
 </div>

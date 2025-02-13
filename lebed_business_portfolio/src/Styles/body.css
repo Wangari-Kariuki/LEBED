@@ -7,14 +7,6 @@ body{
 
 }
 
-.about{
-    height:200px;
-    padding:20px;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
 .about p{
     width: 500px;
     color: #FAF0E6;

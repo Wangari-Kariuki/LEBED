@@ -18,7 +18,7 @@ export default function Webpage() {
   return (
     <div className='body'>
       <TopNavigationbar/>
-      <HeroSection />
+      <HeroSection className='flex flex-col gap-5'/>
 
       <SectionTitles title={"About us"} />
       <FadeinWhenVisible >

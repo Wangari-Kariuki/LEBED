@@ -11,27 +11,27 @@ export default function Services() {
 
 
   return (
-    <div id="services" className=" shadow-custom-heavy p-4 rounded border-t-1 border-[#695b5b] ">
+    <div id="services" className=" center shadow-custom-heavy p-4 rounded border-t-1 border-[#695b5b] ">
         
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <CursorMovement>
-                <div className="service1">
-  <li className="p-4 text-center border-[#0d0d31] bg-[#787586] rounded shadow-md h-[400px] w-[300px] sm:h-[330px] sm:w-[250px] md:h-[370px] md:w-[280px]">
-    <img 
-      src={orth_image} 
-      alt="" 
-      className="w-[200px] h-[220px] mx-auto sm:w-[150px] sm:h-[150px] md:w-[180px] md:h-[200px]" 
-    />
-    <h2 className="my-2 text-[#f9f871] font-semibold text-[16px] sm:text-[12px] md:text-[14px]">
-      Orthopedic Physiotherapy
-    </h2>
-    <p className="leading-5 text-[13px] sm:text-[10px] md:text-[12px] my-3">
-      Management of chronic conditions such as arthritis, tendonitis, and back pain. 
-      Customized exercise programs to 
-      <span className="font-bold"> restore strength, flexibility, and function.</span>
-    </p>
-  </li>
-</div>
+        <ul class="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                  <CursorMovement>
+                                  <div className="service1">
+                    <li className="p-4 text-center border-[#0d0d31] bg-[#787586] rounded shadow-md h-[400px] w-[300px] sm:h-[330px] sm:w-[250px] md:h-[370px] md:w-[280px]">
+                      <img 
+                        src={orth_image} 
+                        alt="" 
+                        className="w-[200px] h-[220px] mx-auto sm:w-[150px] sm:h-[150px] md:w-[180px] md:h-[200px]" 
+                      />
+                      <h2 className="my-2 text-[#f9f871] font-semibold text-[16px] sm:text-[12px] md:text-[14px]">
+                        Orthopedic Physiotherapy
+                      </h2>
+                      <p className="leading-5 text-[13px] sm:text-[10px] md:text-[12px] my-3">
+                        Management of chronic conditions such as arthritis, tendonitis, and back pain. 
+                        Customized exercise programs to 
+                        <span className="font-bold"> restore strength, flexibility, and function.</span>
+                      </p>
+                    </li>
+                  </div>
 
             </CursorMovement>
             
