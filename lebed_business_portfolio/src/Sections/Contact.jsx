@@ -24,16 +24,22 @@ export default function ContactSection() {
       method: "POST",
       body: formData,
     })
-      .then((response) => response.json())
+      .then((response) => response.text()) // Change from .json() to .text()
       .then((data) => {
-        console.log("Success:", data);
-        alert("Message sent successfully!");
-        clearFormFields(); // Clear the form fields
+        console.log("Success Response:", data);
+        
+        if (data.includes("success") || data.includes("Message sent")) {
+          alert("Message sent successfully!");
+          clearFormFields();
+        } else {
+          alert("Failed to send message. Server response: " + data);
+        }
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error Response:", error);
         alert("Failed to send the message.");
       });
+    
   };
 
   return (
@@ -54,7 +60,7 @@ export default function ContactSection() {
       </li>
       <li className="mb-4 flex items-center">
         <img src={location_icon} alt="location_icon" className="w-6 h-6 mr-2" />
-        <span>009300 Ongata Rongai, Kajiado, Kenya</span>
+        <span>009381 Kikuyu, Kiambu Kenya</span>
       </li>
     </ul>
   </div>
