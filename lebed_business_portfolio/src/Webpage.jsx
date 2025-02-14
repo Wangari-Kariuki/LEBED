@@ -20,10 +20,13 @@ export default function Webpage() {
       <TopNavigationbar/>
       <HeroSection className='flex flex-col gap-5'/>
 
-      <SectionTitles title={"About us"} />
+<div className="border-t border-[#695b5b] mt-[20%]">
+<SectionTitles title={"About us"} />
       <FadeinWhenVisible >
             <AboutSection/>
           </FadeinWhenVisible>
+    
+</div>
     
 
  <div className='bg-[#FAF0E6]'>

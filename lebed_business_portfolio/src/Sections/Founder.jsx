@@ -4,9 +4,9 @@ import '../Styles/body.css'
 
 export default function FounderSection() {
   return (
-    <div className="">
+    <div className="center shadow-custom-heavy p-4 rounded border-t-1 border-[#695b5b]">
     {/* <Section_titles title={"About the founder"} class="absolute  top-0 left-0" /> */}
-    <div className="mt-[10px] lg:w-[80%] h-auto flex flex-col sm:flex-row sm:h-auto justify-center items-center rounded-md shadow-lg text-[#CA5050] sm:w-[100%] p-4">
+    <div className="center mt-[10px]  h-auto flex flex-col sm:flex-row sm:h-auto flex justify-center rounded-md shadow-lg   text-[#CA5050]  p-4">
       <img
         src={founder_profile}
         alt="founder profile"
